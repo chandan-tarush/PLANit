@@ -12,9 +12,16 @@ export function AppLayout() {
     <div className="min-h-screen">
       <aside className="fixed inset-x-0 top-0 z-20 border-b border-line bg-white/95 backdrop-blur md:inset-y-0 md:right-auto md:w-64 md:border-b-0 md:border-r">
         <div className="flex h-16 items-center justify-between px-5 md:h-20">
-          <div>
-            <div className="text-xl font-semibold">Planit</div>
-            <div className="hidden text-xs text-stone-500 md:block">Project planning workspace</div>
+          <div className="flex items-center gap-3">
+            <div className="grid h-9 w-9 place-items-center rounded-md bg-ink text-sm font-bold text-white shadow-soft">
+              P
+            </div>
+            <div>
+              <div className="text-xl font-semibold tracking-normal">
+                Plan<span className="text-coral">it</span>
+              </div>
+              <div className="hidden text-xs text-stone-500 md:block">Project planning workspace</div>
+            </div>
           </div>
         </div>
         <nav className="flex gap-1 px-3 pb-3 md:block md:space-y-1">
