@@ -4,16 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#17201c',
-        line: '#d9dfd8',
-        panel: '#f7f8f5',
-        moss: '#4f6f52',
-        coral: '#c75f4b',
-        amber: '#c9973b',
-        sky: '#4d8096',
+        ink: '#10131f',
+        line: '#dde3ea',
+        panel: '#f7f9fc',
+        moss: '#2f7f6f',
+        coral: '#d95f59',
+        amber: '#d5a11e',
+        sky: '#3e8fb0',
+        violet: '#7258e8',
+        lime: '#b5d66b',
       },
       boxShadow: {
-        soft: '0 12px 32px rgba(23, 32, 28, 0.08)',
+        soft: '0 16px 48px rgba(16, 19, 31, 0.09)',
+        lift: '0 22px 70px rgba(16, 19, 31, 0.14)',
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
