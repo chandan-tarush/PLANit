@@ -31,14 +31,29 @@ export type RoadmapPhase = {
   roles: string[];
 };
 
+export type SuccessMetric = {
+  metric: string;
+  target: string;
+  why_it_matters: string;
+};
+
+export type ProductDecision = {
+  area: string;
+  recommendation: string;
+  tradeoff: string;
+};
+
 export type GeneratedPlan = {
   summary: string;
   problem_statement: string;
+  positioning?: string;
   scope: string[];
   mvp: string[];
   features: Feature[];
   milestones: Milestone[];
   tasks: TaskGroup[];
+  success_metrics?: SuccessMetric[];
+  product_decisions?: ProductDecision[];
   risks: string[];
   assumptions: string[];
   dependencies: string[];

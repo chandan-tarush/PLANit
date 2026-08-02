@@ -34,14 +34,29 @@ class RoadmapPhase(BaseModel):
     roles: list[str]
 
 
+class SuccessMetric(BaseModel):
+    metric: str
+    target: str
+    why_it_matters: str
+
+
+class Decision(BaseModel):
+    area: str
+    recommendation: str
+    tradeoff: str
+
+
 class PlanResponse(BaseModel):
     summary: str
     problem_statement: str
+    positioning: str
     scope: list[str]
     mvp: list[str]
     features: list[Feature]
     milestones: list[Milestone]
     tasks: list[TaskGroup]
+    success_metrics: list[SuccessMetric]
+    product_decisions: list[Decision]
     risks: list[str]
     assumptions: list[str]
     dependencies: list[str]
