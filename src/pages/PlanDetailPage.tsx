@@ -40,7 +40,9 @@ export function PlanDetailPage() {
   return (
     <>
       <PageHeader
-        title="Details"
+        eyebrow="Plan detail"
+        title="Execution workspace"
+        description="Review the plan, export the handoff, or duplicate it for a new version."
         actions={
           <>
             <button className="button-secondary" onClick={() => downloadMarkdown(plan)}>
@@ -62,11 +64,11 @@ export function PlanDetailPage() {
       />
 
       <div className="mb-6 grid gap-4 lg:grid-cols-[1fr_auto]">
-        <div className="panel p-5">
+        <div className="surface p-5">
           <Field label="Name">
             <input className="input" value={title} onChange={(event) => setTitle(event.target.value)} onBlur={onRename} />
           </Field>
-          <div className="mt-3 text-sm text-stone-500">Updated {new Date(plan.updatedAt).toLocaleString()}</div>
+          <div className="mt-3 text-sm text-white/42">Updated {new Date(plan.updatedAt).toLocaleString()}</div>
         </div>
         <Link to="/planner" className="button-primary h-fit">
           <PencilLine size={18} />

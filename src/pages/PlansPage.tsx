@@ -32,7 +32,9 @@ export function PlansPage() {
   return (
     <>
       <PageHeader
-        title="Plans"
+        eyebrow="Library"
+        title="Saved planning systems"
+        description="Review, duplicate, export, and evolve plans as project context changes."
         actions={
           <Link to="/planner" className="button-primary">
             <PencilLine size={18} />
@@ -44,7 +46,7 @@ export function PlansPage() {
       {plans.length ? (
         <>
           <div className="mb-4 flex items-center justify-between">
-            <div className="text-sm text-stone-500">{plans.length} saved</div>
+            <div className="text-sm text-white/48">{plans.length} saved</div>
             <button className="button-secondary" onClick={() => plans.forEach(downloadJson)}>
               <FileJson size={18} />
               JSON
